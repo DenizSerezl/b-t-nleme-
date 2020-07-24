@@ -1,0 +1,115 @@
+#2.SORU
+ w, h = 3, 3;
+ a = [[0 for x in range(w)] for y in range(h)]
+ top = 0
+ top2 = 0
+ a[0][0] = 1
+ a[0][1] = 2
+ a[0][2] = -1
+ a[1][0] = 2
+ a[1][1] = 5
+ a[1][2] = 2
+ a[2][0] = -1
+ a[2][1] = -2
+ a[2][2] = 2
+ w, h = 3, 3;
+ b = [[0 for x in range(w)] for y in range(h)]
+ w, h = 4, 3;
+ sonuc = [[0 for x in range(w)] for y in range(h)]
+ c = [1, 2, 3]
+ y1 = [2, 5, 20]
+ y2 = [21, 12, 1]
+ y3 = [25, 7, 21]
+ y4 = [14, 2, 1]
+
+
+ def sifre():
+     x1 = [18, 21, 20]
+     x2 = [11, 1, 25]
+     x3 = [4, 21, 18]
+     x4 = [14, 1, 1]
+     for i in range(3):
+         for j in range(3):
+             top = a[i][j] * x1[j]
+             sonuc[i][j] = top
+     top = 0
+     top += sonuc[0][1]
+     top += sonuc[0][2]
+     top += sonuc[0][0]
+     c[0] = top
+     top = 0
+     top += sonuc[1][1]
+     top += sonuc[1][2]
+     top += sonuc[1][0]
+     c[1] = top
+     top = 0
+     top += sonuc[2][1]
+     top += sonuc[2][2]
+     top += sonuc[2][0]
+     c[2] = top
+     print("<<< RUT >>>")
+     print(c)
+     for i in range(3):
+         for j in range(3):
+             top = a[i][j] * x3[j]
+             sonuc[i][j] = top
+     top = 0
+     top += sonuc[0][1]
+     top += sonuc[0][2]
+     top += sonuc[0][0]
+     c[0] = top
+     top = 0
+     top += sonuc[1][1]
+     top += sonuc[1][2]
+     top += sonuc[1][0]
+     c[1] = top
+     top = 0
+     top += sonuc[2][1]
+     top += sonuc[2][2]
+     top += sonuc[2][0]
+     c[2] = top
+     print("<<< KAY >>>")
+     print(c)
+     for i in range(3):
+         for j in range(3):
+             top = a[i][j] * x1[j]
+             sonuc[i][j] = top
+     top = 0
+     top += sonuc[0][1]
+     top += sonuc[0][2]
+     top += sonuc[0][0]
+     c[0] = top
+     top = 0
+     top += sonuc[1][1]
+     top += sonuc[1][2]
+     top += sonuc[1][0]
+     c[1] = top
+     top = 0
+     top += sonuc[2][1]
+     top += sonuc[2][2]
+     top += sonuc[2][0]
+     c[2] = top
+     print("<<< DUR >>>")
+     print(c)
+     for i in range(3):
+         for j in range(3):
+             top = a[i][j] * x4[j]
+             sonuc[i][j] = top
+     top = 0
+     top += sonuc[0][1]
+     top += sonuc[0][2]
+     top += sonuc[0][0]
+     c[0] = top
+     top = 0
+     top += sonuc[1][1]
+     top += sonuc[1][2]
+     top += sonuc[1][0]
+     c[1] = top
+     top = 0
+     top += sonuc[2][1]
+     top += sonuc[2][2]
+     top += sonuc[2][0]
+     c[2] = top
+     print("<<< NAA >>>")
+     print(c)
+ sifre()
